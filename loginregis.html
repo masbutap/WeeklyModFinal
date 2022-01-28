@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Sign up / Login Form</title>
+   <link rel="stylesheet" href="style/style3.css">
+   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+   <title>Slide Navbar</title>
+</head>
+
+<body>
+   <div class="main">
+      <input type="checkbox" id="chk" aria-hidden="true">
+
+      <div class="signup">
+         <form action="index.html">
+            <label for="chk" aria-hidden="true">Sign up</label>
+            <input id="regisusername" type="text" name="txt" placeholder="Username" required="">
+            <input id="regispassword" type="password" name="pswd" placeholder="Password" required="">
+            <input class="button" id="regisBtn" type="submit" value="Sign Up">
+            <!-- <button id="regisBtn">Sign up</button> -->
+         </form>
+      </div>
+
+      <div class="login">
+         <form action="index.html">
+            <label for="chk" aria-hidden="true">Login</label>
+            <input id="loginUserName" type="text" name="txt" placeholder="Username" required="">
+            <input id="loginPassword" type="password" name="pswd" placeholder="Password" required="">
+            <input class="button" id="login-button" type="submit" value="Login">
+            <!-- <a id="link-login">
+               <button id="login-button" type="button" value="Login" >
+                  Login</button>
+            </a> -->
+         </form>
+      </div>
+   </div>
+<!-- partial -->
+<script src="loginregis.js"></script>
+</body>
+
+</html>

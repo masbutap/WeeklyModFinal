@@ -1,0 +1,177 @@
+* {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	width: 1100px;
+	margin: auto;
+	position: relative;
+}
+img {
+	margin-top: 10px;
+	width: 50%;
+	height: 50%;
+
+}
+
+.logo a {
+	font-size: 50px;
+	font-weight: 800;
+	float: left;
+	font-family: 'Supermercado One', cursive;;
+	color: #FF5151;
+}
+.menu {
+	float: right;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	margin: auto;
+	line-height: 80px;
+	position: sticky;
+	top: 0;
+	background: white;
+	z-index: 1;
+	border-bottom: 1px solid lightslategrey;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	color: #FF9B6A;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 16px 0px 16px;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+section {
+	margin: auto;
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.kolom {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'comic sans ms';
+	color: #FF5151;
+}
+
+a.btn-blue {
+	background: #161E54;
+	border-radius: 20px;
+	margin-top: 20px;
+	padding: 15px 20px 15px 20px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+a.btn-blue:hover {
+	background: #E26A2C;
+	text-decoration: none;
+}
+
+
+h2 {
+	font-family: 'Lilita One', cursive;;
+	font-weight: 800;
+	font-size: 45px;
+	margin-bottom: 20px;
+	color: #161E54;
+	width: 100%;
+	line-height: 50px;
+}
+
+.button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .button button {
+   border: 0;
+   width: 50%;
+   cursor: pointer;
+   padding: 15px 0;
+   border-radius: 5px;
+   font-family: "Mulish", sans-serif;
+   font-weight: bold;
+   color: white;
+   background-color: #F4A442;
+ } 
+
+ button {
+	 margin: 50px;
+	cursor: pointer;
+	font-family: 'Staatliches', cursive;
+	box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+	transition: 500ms;
+} 
+
+button:after {
+	content: '';
+	position: absolute;
+	transform: translateX(-55px) translateY(-40px);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: transparent;
+	box-shadow: 0px 0px 50px transparent;
+	transition: 500ms;
+}
+
+button:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}
+
+button:hover:after {
+	background: white;
+	box-shadow: 0px 0px 20px #ffc421, 0px 0px 30px #ffc421, inset 0px 0px 10px #ffc421;
+	animation: spin 1s infinite linear;
+}
+
+@keyframes spin{
+	25%{transform: translateX(-25px) translateY(-35px);
+			width: 15px;
+			height: 15px;}
+	50% {transform: translateX(-55px) translateY(-30px);
+			width: 5px;
+			height: 5px;}
+	75% {transform: translateX(-85px) translateY(-35px);
+			width: 15px;
+			height: 15px;}
+}
+
+button:focus {
+	outline: none;
+}
